@@ -9,48 +9,43 @@ The primary objective was to architect a production-grade CMS that ensures:
 * **Headless Architecture** — Serves as a central API provider for customer-facing storefronts.
 * **Secure Administration** — Protected routes and robust authentication for store managers.
 
-## 🚀 Key Features
+The application is containerized using **Docker** for consistent deployment and hosts its database on **PostgreSQL**. It is currently deployed on an **Azure Virtual Machine** using Nginx as a reverse proxy.
 
-### ⚡ Server-Side Rendering (SSR)
-Utilizes **Next.js App Router** to fetch data securely on the server, ensuring optimal performance and SEO-friendly content delivery.
+## ✨ Key Features
 
-### 📦 Headless CMS Capabilities
-Acts as a centralized backend, exposing public **API endpoints** for Products, Categories, and Billboards that can be consumed by any frontend client.
-
-### 📊 Real-Time Analytics
-Interactive dashboard visualizing total revenue, sales count, and stock levels to provide immediate business insights.
-
-### 🖼️ Cloud-Native Media
-Integrated **Cloudinary** support for optimized image uploading, storage, and delivery, replacing traditional local file storage.
-
-### 🔐 Secure Authentication
-Implemented **NextAuth.js** to handle secure admin sessions, protecting sensitive routes and database mutations.
-
-### 🐳 Fully Containerized
-Wrapped in **Docker** with a custom Nginx reverse proxy configuration, deployed live on a **Microsoft Azure Virtual Machine**.
+* **Dashboard Analytics:** Visual overview of total revenue, sales count, and stock levels.
+* **Product Management:** Create, update, and delete products with rich text descriptions.
+* **Image Management:** Seamless image uploads and hosting via **Cloudinary**.
+* **Category & Billboard Management:** Organize products into specific categories and marketing billboards.
+* **Authentication:** Secure admin login using **NextAuth.js**.
+* **API Support:** Auto-generated API endpoints to serve data to a customer-facing storefront (Headless CMS architecture).
+* **Dark Mode:** Built-in UI adaptability.
 
 ## 🛠️ Tech Stack
 
-| Component | Technology | Description |
-| :--- | :--- | :--- |
-| **Framework** | Next.js 14 | App Router & Server Actions |
-| **Language** | TypeScript | Type safety & maintainability |
-| **Database** | PostgreSQL | Relational data storage |
-| **ORM** | Prisma | Schema management & type-safe queries |
-| **DevOps** | Docker | Containerization & Orchestration |
-| **Cloud** | Azure VM | Hosting infrastructure |
-| **Storage** | Cloudinary | CDN for product images |
-| **Styling** | Tailwind CSS | Utility-first responsive design |
+**Frontend & Framework**
+* [Next.js](https://nextjs.org/) (App Router)
+* [React](https://reactjs.org/)
+* [Tailwind CSS](https://tailwindcss.com/) (Styling)
+* [TypeScript](https://www.typescriptlang.org/)
 
-## 🔄 Application Workflow
+**Backend & Database**
+* [PostgreSQL](https://www.postgresql.org/) (Database)
+* [Prisma](https://www.prisma.io/) (ORM)
+* [NextAuth.js](https://next-auth.js.org/) (Authentication)
 
-1.  **Request** — Nginx Proxy receives the request and forwards it to the Next.js container.
-2.  **Auth Check** — NextAuth middleware validates the admin session.
-3.  **SSR Fetch** — Server retrieves live inventory data from PostgreSQL.
-4.  **Render** — Fully populated HTML is sent to the browser.
-5.  **API Response** — External storefronts consume JSON data via `/api/products`.
-6.  **Mutation** — Server Actions process updates (e.g., changing stock) and revalidate the cache.
+**Infrastructure & DevOps**
+* [Docker](https://www.docker.com/) & Docker Compose
+* [Microsoft Azure](https://azure.microsoft.com/) (VM Hosting)
+* [Nginx](https://www.nginx.com/) (Reverse Proxy)
+* [Cloudinary](https://cloudinary.com/) (Image CDN)
 
+## 🚀 Setup Instructions
+
+### Prerequisites
+* Node.js (v18+)
+* Docker & Docker Compose
+* Git
 ## ⚡ Setup & Installation
 
 ### 1. Clone the Repository
