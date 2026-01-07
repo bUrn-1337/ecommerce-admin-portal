@@ -9,7 +9,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       <Toaster position="top-right" richColors />
       <aside className="w-64 bg-white border-r fixed h-full z-10 hidden md:flex flex-col">
         <div className="p-6 border-b">
-          <h1 className="text-xl font-bold text-blue-600">NexusStore</h1>
+          <h1 className="text-xl font-bold text-blue-600">Admin-Ecommerce-Portal</h1>
         </div>
         
         <div className="flex-1 overflow-y-auto py-4">

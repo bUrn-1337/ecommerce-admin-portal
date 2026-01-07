@@ -7,14 +7,14 @@ services:
       args:
         # Pass the variable during the build phase
         NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: ${NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}
-    container_name: nexus-store-web
+    container_name: web
     restart: always
     ports:
       - "3000:3000"
     env_file:
       - .env 
     environment:
-      - DATABASE_URL=postgresql://postgres:postgres@db:5432/nexus-commerce
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/db
       - NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=${NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME}
     depends_on:
       - db
@@ -24,12 +24,12 @@ services:
   
   db:
     image: postgres:16-alpine
-    container_name: nexus-store-db
+    container_name: db
     restart: always
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: nexus-commerce
+      POSTGRES_DB: db
       NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME: dobm3xsee
     ports:
       - "5432:5432"

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Package, LayoutDashboard, Settings } from "lucide-react";
+import { Package, LayoutDashboard } from "lucide-react";
 
 export function DashboardNav() {
   const pathname = usePathname();
@@ -10,7 +10,6 @@ export function DashboardNav() {
   const links = [
     { href: "/dashboard", label: "Overview", icon: LayoutDashboard },
     { href: "/dashboard/products", label: "Products", icon: Package },
-    { href: "/dashboard/settings", label: "Settings", icon: Settings },
   ];
 
   return (
