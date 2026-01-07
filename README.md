@@ -50,7 +50,7 @@ The application is containerized using **Docker** for consistent deployment and 
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/bUrn-1337/ecommerce-admin-portal](https://github.com/bUrn-1337/ecommerce-admin-portal)
+git clone https://github.com/bUrn-1337/ecommerce-admin-portal
 cd ecommerce-admin-portal
 ```
 ### 2. Environment Configuration
