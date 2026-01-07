@@ -1,6 +1,6 @@
-# 🛒 Nexus Commerce — Server-Rendered E-Commerce Admin Portal
+# 🛒ECommerce-Admin-Portal — Server-Rendered E-Commerce Admin Portal
 
-**Nexus Commerce** is a robust, server-side rendered (SSR) administrative dashboard designed to manage e-commerce inventory and sales performance. Built for scalability and production readiness, this application allows store administrators to control multiple aspects of an online store via a headless architecture.
+**ECommerce-Admin-Portal** is a robust, server-side rendered (SSR) administrative dashboard designed to manage e-commerce inventory and sales performance. Built for scalability and production readiness, this application allows store administrators to control multiple aspects of an online store via a headless architecture.
 
 ## 🎯 Objective
 
