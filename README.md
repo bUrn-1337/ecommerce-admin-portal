@@ -55,8 +55,8 @@ Wrapped in **Docker** with a custom Nginx reverse proxy configuration, deployed 
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/your-username/nexus-commerce.git](https://github.com/your-username/nexus-commerce.git)
-cd nexus-commerce
+git clone [https://github.com/bUrn-1337/ecommerce-admin-portal](https://github.com/bUrn-1337/ecommerce-admin-portal)
+cd ecommerce-admin-portal
 ```
 ### 2. Environment Configuration
 Create a .env file in the project root:
