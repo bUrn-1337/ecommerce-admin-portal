@@ -75,3 +75,12 @@ the dockerisation takes care of this, by running the seed script
 
 ### 5. Access the Dashboard
 Open http://localhost:3000 to access the application.
+
+### 6. Dummy credentials
+```env
+    admin_email=admin@example.com
+    admin_pw=admin123
+```
+
+### 7. Live Deployment link
+[http://57.159.28.212/](http://57.159.28.212/)
