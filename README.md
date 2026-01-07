@@ -63,7 +63,7 @@ Create a .env file in the project root:
 
 Code snippet
 ```env
-DATABASE_URL="postgresql://user:password@localhost:5432/nexus-commerce"
+DATABASE_URL="postgresql://postgres:password123@localhost:5432/ecommerce_db?schema=public"
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your_cloud_name"
 NEXTAUTH_SECRET="your_secret_key"
 NEXTAUTH_URL="http://localhost:3000"
@@ -78,5 +78,5 @@ docker compose up -d --build
 the dockerisation takes care of this, by running the seed script 
 
 
-5. Access the Dashboard
+### 5. Access the Dashboard
 Open http://localhost:3000 to access the application.
