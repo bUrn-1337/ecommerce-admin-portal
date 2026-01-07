@@ -57,27 +57,26 @@ Wrapped in **Docker** with a custom Nginx reverse proxy configuration, deployed 
 ```bash
 git clone [https://github.com/your-username/nexus-commerce.git](https://github.com/your-username/nexus-commerce.git)
 cd nexus-commerce
-2. Environment Configuration
+```
+### 2. Environment Configuration
 Create a .env file in the project root:
 
 Code snippet
-
+```env
 DATABASE_URL="postgresql://user:password@localhost:5432/nexus-commerce"
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME="your_cloud_name"
 NEXTAUTH_SECRET="your_secret_key"
 NEXTAUTH_URL="http://localhost:3000"
-3. Run with Docker (Recommended)
+```
+### 3. Run with Docker (Recommended)
 Since this project is containerized, you can spin it up instantly:
 
-Bash
+```bash
+docker compose up -d --build
+```
+### 4. Database Initialization
+the dockerisation takes care of this, by running the seed script 
 
-docker-compose up -d --build
-4. Database Initialization
-Initialize the schema inside the container:
 
-Bash
-
-docker-compose exec nexus-store-web npx prisma db push
-docker-compose exec nexus-store-web npm run seed
 5. Access the Dashboard
 Open http://localhost:3000 to access the application.
